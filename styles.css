@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+#fileInput {
+    display: none;
+}
+
+#uploadButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#imageList {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-container {
+    width: 300px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+img {
+    max-width: 100%;
+}
+
+.caption {
+    margin-top: 10px;
+}
