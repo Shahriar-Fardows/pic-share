@@ -1,36 +1,40 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    padding: 20px;
 }
 
-h1 {
+#fileInput {
+    display: none;
+}
+
+#uploadButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#imageList {
     margin-top: 20px;
-}
-
-input[type="file"],
-input[type="text"],
-textarea,
-button {
-    display: block;
-    margin: 10px auto;
-}
-
-#imageGallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    gap: 20px;
 }
 
 .image-container {
-    margin: 20px;
+    width: 300px;
     text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
-.image-container img {
-    max-width: 200px;
+img {
+    max-width: 100%;
 }
 
-#downloadLink {
-    margin: 10px auto;
-    display: none;
+.caption {
+    margin-top: 10px;
 }

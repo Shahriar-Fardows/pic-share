@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Image Sharing</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Sharing Platform</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Image Sharing Platform</h1>
-    <input type="file" id="imageInput" accept="image/*">
-    <input type="text" id="imageTitle" placeholder="Image Title">
-    <textarea id="imageCaption" placeholder="Image Caption"></textarea>
-    <button onclick="uploadImage()">Upload Image</button>
-    <div id="imageGallery"></div>
-    <a id="downloadLink" style="display: none;">Download Image</a>
-    
+    <input type="file" id="fileInput" accept="image/*">
+    <button id="uploadButton">Upload Image</button>
+    <div id="imageList"></div>
     <script src="script.js"></script>
 </body>
 </html>
